@@ -2,32 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-01T08:10:34 ICT" name="Default suite" finished-at="2024-07-01T08:10:56 ICT" duration-ms="21407">
+  <suite started-at="2024-07-01T10:27:21 ICT" name="Default suite" finished-at="2024-07-01T10:27:37 ICT" duration-ms="16792">
     <groups>
     </groups>
-    <test started-at="2024-07-01T08:10:34 ICT" name="Default test" finished-at="2024-07-01T08:10:56 ICT" duration-ms="21407">
-      <class name="Functionals.SearchUserPageTest">
-        <test-method signature="searchDataInvalid(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Functionals.SearchUserPageTest@3a7442c7]" started-at="2024-07-01T08:10:34 ICT" name="searchDataInvalid" data-provider="dataInvalid" finished-at="2024-07-01T08:10:56 ICT" duration-ms="21364" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[asjdkwjlkqwjekl]]>
-              </value>
-            </param>
-            <param index="3">
-              <value is-null="true"/>
-            </param>
-          </params>
+    <test started-at="2024-07-01T10:27:21 ICT" name="Default test" finished-at="2024-07-01T10:27:37 ICT" duration-ms="16792">
+      <class name="Functionals.AddUserPageTest">
+        <test-method signature="cancelAddUser()[pri:3, instance:Functionals.AddUserPageTest@3a7442c7]" started-at="2024-07-01T10:27:21 ICT" name="cancelAddUser" finished-at="2024-07-01T10:27:37 ICT" duration-ms="16759" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchDataInvalid -->
-      </class> <!-- Functionals.SearchUserPageTest -->
+        </test-method> <!-- cancelAddUser -->
+      </class> <!-- Functionals.AddUserPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

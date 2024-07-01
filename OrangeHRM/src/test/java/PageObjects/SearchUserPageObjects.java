@@ -20,7 +20,6 @@ public class SearchUserPageObjects {
 	By employee_Input = By.xpath("//div[@class='oxd-autocomplete-wrapper']//input");
 	
 	By role_Dropbox = By.xpath("//div[contains(@class,'oxd-grid-item')][2]//div[@class='oxd-select-wrapper']");
-	By role_DropDown = By.xpath("//div[@role='option']//span[text()='']");
 	By status_Dropbox = By.xpath("//div[contains(@class,'oxd-grid-item')][4]//div[@class='oxd-select-wrapper']");
 	
 	By table_Cards = By.xpath("//div[@class='oxd-table-body']//div[@class='oxd-table-card']");
