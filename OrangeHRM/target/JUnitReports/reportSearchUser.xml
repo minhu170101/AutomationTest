@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="138.727" tests="6" skipped="0" failures="1" errors="0">
+<testcase classname="feature to test search user functionality" name="Search for users by different criteria - #1.1" time="21.672">
+<system-out><![CDATA[
+Given user is on search page................................................passed
+When user entering "admin", "", "" and ""...................................passed
+And clicks on search button.................................................passed
+Then system should display the search results...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test search user functionality" name="Search for users by different criteria - #1.2" time="23.999">
+<system-out><![CDATA[
+Given user is on search page................................................passed
+When user entering "admin", "Admin", "" and ""..............................passed
+And clicks on search button.................................................passed
+Then system should display the search results...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test search user functionality" name="Search for users by different criteria - #1.3" time="23.879">
+<system-out><![CDATA[
+Given user is on search page................................................passed
+When user entering "", "", "Sanket" and ""..................................passed
+And clicks on search button.................................................passed
+Then system should display the search results...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test search user functionality" name="Search for users by different criteria - #1.4" time="21.028">
+<system-out><![CDATA[
+Given user is on search page................................................passed
+When user entering "", "", "" and "Enabled".................................passed
+And clicks on search button.................................................passed
+Then system should display the search results...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test search user functionality" name="Search for users by different criteria - #1.5" time="25.136">
+<system-out><![CDATA[
+Given user is on search page................................................passed
+When user entering "admin", "Admin", "Sanket" and "Enabled".................passed
+And clicks on search button.................................................passed
+Then system should display the search results...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test search user functionality" name="Search for users by different criteria - #1.6" time="22.871">
+<failure type="org.openqa.selenium.NoSuchWindowException" message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c95cdaaa6cf6b3beaca12e407aba91e6, findElements {using=xpath, value=//div[@class='oxd-table-body']//div[@class='oxd-table-card']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\MINH\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57904/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c95cdaaa6cf6b3beaca12e407aba91e6">
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c95cdaaa6cf6b3beaca12e407aba91e6, findElements {using=xpath, value=//div[@class='oxd-table-body']//div[@class='oxd-table-card']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\MINH\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57904/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c95cdaaa6cf6b3beaca12e407aba91e6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:362)
+	at PageObjects.SearchUserPageObjects.checkDataFound(SearchUserPageObjects.java:98)
+	at StepDefinitions.SearchUser.SearchUserSteps.system_should_display_the_search_results(SearchUserSteps.java:58)
+	at ✽.system should display the search results(file:///D:/Automation/Trainning/OrangeHRM/src/test/resources/Features/searchUser.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on search page................................................passed
+When user entering "sadasdqw", "Admin", "asdwqewq" and "Enabled"............passed
+And clicks on search button.................................................passed
+Then system should display the search results...............................failed
+]]></system-out>
+</testcase>
+</testsuite>

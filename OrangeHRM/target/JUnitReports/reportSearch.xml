@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="31.235" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="feature to test add user functionality" name="Add a users with different criteria - #1.1" time="31.121">
+<failure type="java.lang.AssertionError" message="expected [https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers] but found [https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser]">
+<![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers] but found [https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.AddUser.AddUserSteps.system_should_navigate_to_view_user_page(AddUserSteps.java:60)
+	at ✽.system should navigate to view user page(file:///D:/Automation/Trainning/OrangeHRM/src/test/resources/Features/addUser.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on add user page..............................................passed
+When user entering "admin1234", "Admin", "Ravi M B", "Enabled", "password" and "confirmPassword".passed
+And clicks on save button...................................................passed
+Then system should navigate to view user page...............................failed
+]]></system-out>
+</testcase>
+</testsuite>

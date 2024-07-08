@@ -40,7 +40,7 @@ public class AddUserPageObjects {
 		}
 	}
 	
-	public void setPasswordInput(String password, String confirmPassword) {
+	public void setPasswordInput(String password, String confirmPassword) throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(password_Input));
 		List<WebElement> inputElements = driver.findElements(password_Input);
 		if(password != null) {

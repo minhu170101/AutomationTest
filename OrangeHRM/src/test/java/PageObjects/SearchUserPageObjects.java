@@ -37,14 +37,14 @@ public class SearchUserPageObjects {
 	}
 	
 	public void setUsernameInput(String username) {
-		if(username != null) {
+		if(username != null && username != "") {
 			WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(username_Input));
 			element.sendKeys(username);
 		}
 	}
 	
 	public void setEmployeeInput(String employee) throws InterruptedException {
-		if(employee != null) {
+		if(employee != null && employee != "") {
 			WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(employee_Input));
 			element.sendKeys(employee);
 			
@@ -61,7 +61,7 @@ public class SearchUserPageObjects {
 	}
 	
 	public void selectRoleDropbox(String role) {
-		if(role != null) {
+		if(role != null && role != "") {
 			WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(role_Dropbox));
 			element.click();
 			
@@ -73,7 +73,7 @@ public class SearchUserPageObjects {
 	}
 	
 	public void selectStatusDropbox(String status) {
-		if(status != null) {
+		if(status != null && status != "") {
 			WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(status_Dropbox));
 			element.click();
 			
