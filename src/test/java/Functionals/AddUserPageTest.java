@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,7 +18,10 @@ public class AddUserPageTest {
 	private WebDriverWait wait;
 	
 	public void Setup() throws InterruptedException {
-		
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		

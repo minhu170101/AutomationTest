@@ -3,7 +3,9 @@ package Functionals;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,7 +18,10 @@ public class LoginPageTest {
 	private WebDriverWait wait;
 	
 	public void RunBrowser() throws InterruptedException {
-		driver = new EdgeDriver();
+        EdgeOptions options = new EdgeOptions();
+        options.addArguments("--headless=new");
+
+		driver = new EdgeDriver(options);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
